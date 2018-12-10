@@ -1,1 +1,21 @@
+<!-- BUG 1: This breaks the app -->
+
+<!-- <ion-content>
+    <ion-list>
+        <ion-list-header *ngIf="auth.getEmail()">{{auth.getEmail()}}</ion-list-header>
+
+        <ion-item (click)="logout()" *ngIf="auth.authenticated">
+            <ion-icon name="log-out" item-left></ion-icon>
+            Log out
+        </ion-item>
+            
+        <ion-item (click)="login()" *ngIf="!auth.authenticated">
+            <ion-icon name="log-in" item-left></ion-icon>
+            Log in
+        </ion-item> 
+    </ion-list>
+</ion-content> -->
+
+<!-- Original line of code from template -->
 <ion-nav [root]="rootPage"></ion-nav>
+
