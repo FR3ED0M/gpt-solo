@@ -42,7 +42,7 @@ export class MyApp {
         }
       );
     });
-  }
+  };
   
 
   login() {

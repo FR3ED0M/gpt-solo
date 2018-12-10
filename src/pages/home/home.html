@@ -1,9 +1,10 @@
+
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 
 <ion-header>
         <ion-navbar>
-          <ion-title>Info</ion-title>
+          <ion-title>Information</ion-title>
         </ion-navbar>
 </ion-header>
 
@@ -12,20 +13,20 @@
         <div>
             <div>
                 <div>
-                    <div class="group">
+                    <div class="group" id="firstName">
                         <ion-item>
                             <ion-icon name="person" item-start></ion-icon>
                             <ion-input placeholder="First Name:"></ion-input>
                         </ion-item>
                     </div>
-                    <div class="group">
+                    <div class="group" id="lastName">
                         <ion-item>
                             <ion-icon name="person" item-start></ion-icon>
                             <ion-input placeholder="Last Name:"></ion-input>
                         </ion-item>
                     </div>
                     
-                    <!-- <div class="group">
+                    <div class="group">
                         <ion-item>
                             <ion-icon name="heart" item-start></ion-icon>
                             
@@ -68,7 +69,7 @@
                     <div class="group">
                         <ion-item>
                             <ion-icon name="medkit" item-start></ion-icon>
-                            <ion-textarea class="text-input" placeholder="Medicine Allergies:">
+                            <ion-textarea class="text-input" placeholder="Medical Allergies:">
                             </ion-textarea>
                         </ion-item>
                     </div>
@@ -76,11 +77,10 @@
                     <div class="group">
                         <ion-item>
                             <ion-icon name="medkit" item-start></ion-icon>
-                            <ion-textarea class="text-input" placeholder="Non-Medicine Allergies:">
+                            <ion-textarea class="text-input" placeholder="Non-Medical Allergies:">
                             </ion-textarea>
                         </ion-item>
                     </div>
-                    
                     
                     <div class="group">
                         <ion-item>
@@ -93,8 +93,7 @@
                                 <ion-option value="o">O</ion-option>
                             </ion-select>
                         </ion-item>
-                    </div> -->
-
+                    </div>
                 </div>
                 
                 <!-- <button ion-button>Update</button> -->

@@ -19,7 +19,8 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AuthService } from '../services/auth.service';
 
-
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireDatabase } from 'angularfire2/database';
 
 // for errors i guess
 import { NgxErrorsModule } from '@ultimate/ngxerrors';
@@ -38,7 +39,8 @@ import { NgxErrorsModule } from '@ultimate/ngxerrors';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseConfig.fire),
-    NgxErrorsModule
+    NgxErrorsModule,
+    AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
