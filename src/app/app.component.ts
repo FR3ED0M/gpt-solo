@@ -32,7 +32,7 @@ export class MyApp {
       .subscribe(
         user => {
           if (user) {
-            this.rootPage = TabsPage;
+            this.rootPage = LoginPage;
           } else {
             this.rootPage = LoginPage;
           }

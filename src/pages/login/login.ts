@@ -43,8 +43,8 @@ export class LoginPage {
 			.then(
 				() => this.navCtrl.setRoot(TabsPage),
 				error => this.loginError = error.message
-			);
-	}
+			)
+	};
 
 	signup(){
 		this.navCtrl.push(SignupPage);
