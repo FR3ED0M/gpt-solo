@@ -19,10 +19,6 @@ export class HomePage {
     
   }
 
-  goToProfile(): void {
-    this.navCtrl.push("ProfilePage");
-  }
-
 
   // constructor(public navCtrl: NavController, public db: AngularFireDatabase) {
   //   this.db.list('name').push(this.name);
