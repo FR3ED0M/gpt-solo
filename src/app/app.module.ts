@@ -13,10 +13,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 
+import { firebaseConfig } from '../config';
+
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { firebaseConfig } from '../config';
 import { AuthService } from '../services/auth.service';
+
+
 
 // for errors i guess
 import { NgxErrorsModule } from '@ultimate/ngxerrors';

@@ -7,4 +7,15 @@ export const firebaseConfig = {
         storageBucket: "gpts-4bb71.appspot.com",
         messagingSenderId: "136716938071" 
     }
+
+
+
+    // // Initialize Cloud Firestore through Firebase
+    // var db = firebase.firestore(fire),
+
+    // // Disable deprecated features
+    // db.settings({
+    //     timestampsInSnapshots: true
+    // }
 };
+

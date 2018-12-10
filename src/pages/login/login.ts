@@ -49,8 +49,8 @@ export class LoginPage {
 	signup(){
 		this.navCtrl.push(SignupPage);
 	  }
-
-}
+// DONT FORGET THE SEMICOLON HERE!! ;	  
+};
 
 
 
