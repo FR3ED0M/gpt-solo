@@ -52,7 +52,7 @@ export class MyApp {
 
   logout() {
     this.auth.signOut();
-    this.nav.setRoot(TabsPage);
+    this.nav.setRoot(LoginPage);
   }
 
 }
