@@ -1,9 +1,9 @@
-import { NgModule, ErrorHandler } from '@angular/core';
+import { NgModule, ErrorHandler, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
+import { MapPage } from '../pages/map/map';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -24,11 +24,18 @@ import { AngularFireDatabase } from 'angularfire2/database';
 
 // for errors i guess
 import { NgxErrorsModule } from '@ultimate/ngxerrors';
+import { Geolocation } from '@ionic-native/geolocation';
+
+
 
 @NgModule({
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
+
   declarations: [
     MyApp,
-    AboutPage,
+    MapPage,
     ContactPage,
     HomePage,
     TabsPage,
@@ -45,7 +52,7 @@ import { NgxErrorsModule } from '@ultimate/ngxerrors';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
+    MapPage,
     ContactPage,
     HomePage,
     TabsPage,
@@ -57,6 +64,7 @@ import { NgxErrorsModule } from '@ultimate/ngxerrors';
     SplashScreen,
     AngularFireAuth,
     AuthService,
+    Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

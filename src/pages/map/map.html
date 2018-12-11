@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd-WPXYEZVn2EV1E8i6gdOra7wUDtrd7Y&callback=initMap"
+    async defer></script>
+  </body>
+</html>
+
+<!-- <ion-header>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://maps.googleapis.com/ https://maps.gstatic.com/ https://mts0.googleapis.com/ 'unsafe-inline' 'unsafe-eval'">
+    
+    <script src="/platforms/ios/CordovaLib/cordova.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd-WPXYEZVn2EV1E8i6gdOra7wUDtrd7Y"></script>
+
+</ion-header>
+
+
+<body unresolved>
+    <iframe
+        width="600"
+        height="800"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDd-WPXYEZVn2EV1E8i6gdOra7wUDtrd7Y
+        &center=26.037161,-80.981494" allowfullscreen>
+    </iframe>
+</body> -->
+
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd-WPXYEZVn2EV1E8i6gdOra7wUDtrd7Y&callback=initMap"></script> -->
+    
+    
+    <!-- <ion-header no-border>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+            <ion-buttons start (click)="red"> </ion-buttons>
+        </button>
+    </ion-header> -->
+    
+    <!-- <ion-content>
+          
+        
+        <div class="login-wrap">
+            <div class="login-html">
+                <div #map id="map"></div>
+                <button ion-button (click)="locate()">My Location: </button>
+                <button ion-button >SOS</button>
+                <p>{{ lat }}</p>
+                <p>{{ lng }}</p>
+            </div>
+        </div>
+        
+        
+    </ion-content> -->
+
+<!-- AIzaSyDd-WPXYEZVn2EV1E8i6gdOra7wUDtrd7Y -->
