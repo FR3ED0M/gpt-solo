@@ -1,11 +1,17 @@
-
-
-
-page-map body {
-    font-family: 'Roboto', Arial, sans-serif;
-    height: 100%;
-    margin: 0;
-  }
+#map {
+  height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+// page-map body {
+//     font-family: 'Roboto', Arial, sans-serif;
+//     height: 100%;
+//     margin: 0;
+//   }
 
 
 

@@ -37,11 +37,11 @@
     "zone.js": "0.8.26"
   },
   "devDependencies": {
-    "@ionic/app-scripts": "3.2.1",
+    "@ionic/app-scripts": "^3.2.1",
     "@ionic/lab": "1.0.15",
     "@types/google-maps": "^3.2.0",
-    "typescript": "~2.6.2",
-    "google-map": "GoogleWebComponents/google-map#^3.2.0"
+    "google-map": "GoogleWebComponents/google-map#^3.2.0",
+    "typescript": "~2.6.2"
   },
   "description": "An Ionic project"
 }

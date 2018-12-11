@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { google } from 'google-maps';
+
+var google;
 
 @Component({
   selector: 'page-map',
@@ -9,6 +12,23 @@ export class MapPage {
 
   constructor(public navCtrl: NavController) {
 
+  }
+
+  initMap() {
+    var myLatLng = {lat: -25.363, lng: 131.044};
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: myLatLng
+    });
+
+    var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      title: 'Hello World!'
+    });
+
+    marker.setMap(map);
   }
 
 }
